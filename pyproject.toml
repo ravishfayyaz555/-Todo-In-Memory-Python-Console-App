@@ -1,0 +1,18 @@
+[project]
+name = "todo-app"
+version = "0.1.0"
+description = "A simple interactive command-line Todo application"
+readme = "README.md"
+requires-python = ">=3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+todo = "todo.__main__:main"
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
